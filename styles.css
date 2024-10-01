@@ -1,0 +1,99 @@
+body{
+    margin:0;
+    padding:0;
+    position:relative;
+    color:rgb(228, 228, 160);
+    font-family: 'Poppins', sans-serif;
+    height: 170vh;
+    font-weight: bolder;
+  }
+  
+  body::before{
+    content:"";
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+      background-image:linear-gradient( 130deg,
+       rgba(87, 11, 163, 0.7),
+       rgba(21, 1, 54, 0.3) ), 
+       url("https://cdn2.steamgriddb.com/thumb/7c693e489c92c0c82ad4c5c7dca411d8.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    z-index:-1;
+  }
+
+  form{
+    min-width: 400px;
+    max-width: 750px;
+    width: 90vh;
+    margin: 1em auto;
+    background: linear-gradient(130deg, rgba(82, 6, 82, 0.836), rgba(17, 17, 123, 0.819));
+    border-radius: 15px;
+    padding-bottom: 1em;
+}
+
+  fieldset{
+    border: none;
+    margin:1em auto;
+  }
+
+  hr{
+    width: 40%;
+    border: solid 0.1vh beige;
+    margin-bottom: 2.5em;
+  }
+  
+  h1{
+    text-align:center;
+    padding-top:1em;
+  }
+  
+  p{
+    text-align:center;
+    font-style:italic;
+    font-size:0.8em;
+    margin-top:-1em;
+  }
+  
+  #name-label, #email-label, #number-label{
+    display:block;
+    width:100%;
+  }
+  
+  input, select, textarea{
+    width: 100%;
+    margin: 0.7em auto 1.6em auto;
+    min-height: 1.9em;
+  }
+
+  input:invalid {
+    border: 2px solid red;
+  }
+  
+  input:valid {
+    border: 2px solid green;
+  }
+
+  input[type="radio"], input[type="checkbox"]{
+    width: unset;
+    vertical-align: middle;
+    margin: 1em;
+  }
+
+  input[type="radio"]{
+    margin-left: 11em;
+  }
+
+  button{
+    display: block;
+    width: 20vh;
+    height: 5vh;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1em auto;
+  }
+
