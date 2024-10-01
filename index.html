@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Test</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+  <h1 id="title">Survey Form LOL</h1>
+  <p id="description">Please reply to help me find out more about the LOL player.</p>
+
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Pseudo <input id="name" type="text" placeholder="Enter your pseudo" maxlength="30" required/></label>
+      <label id="email-label">Email <input id="email" type="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/></label>
+      <label id="number-label">Age <input id="number" type="number" placeholder="Enter your age" min="1" max="99" pattern="^[1-9][0-9]?$" required/></label>
+    </fieldset>
+
+    <hr>
+
+    <fieldset>
+        <label for="primary-role">What is your main role ?
+            <select name="primary-role" id="primary-role" required>
+                <option value="top">Top</option>
+                <option value="jungle">Jungle</option>
+                <option value="mid">Mid</option>
+                <option value="adc">Adc</option>
+                <option value="sup">Sup</option>
+            </select>
+        </label>
+
+        <label for="secondary-role">What is your second role ?
+            <select name="secondary-role" id="secondary-role" required>
+                <option value="top">Top</option>
+                <option value="jungle">Jungle</option>
+                <option value="mid">Mid</option>
+                <option value="adc">Adc</option>
+                <option value="sup">Sup</option>
+            </select>
+        </label>
+    </fieldset>
+
+    <hr>
+
+    <fieldset>
+        <legend>Do you recommend this game at your friend ?</legend>
+        <label for="yesorno"><input type="radio" name="yesorno">Yes !</label>
+        <label for="yesorno"><input type="radio" name="yesorno">No, for sure !</label>
+    </fieldset>
+
+    <hr>
+
+    <fieldset>
+        <legend>What do you like in this game ?</legend>
+        <label for="">Team Play <input type="checkbox" name="teamplay"></label>
+        <label for="">Solo kill <input type="checkbox" name="solokill"></label>
+        <label for="">Laning phase <input type="checkbox" name="laningphase"></label>
+        <label for="">Team fight <input type="checkbox" name="teamfight"></label>
+        <br>
+        <label for="">Duo queue <input type="checkbox" name="duoqueue"></label>
+        <label for="">Objectifs <input type="checkbox"name="objectifs"></label>
+        <label for="">Clutch <input type="checkbox" name="clutch"></label>
+        <label for="">Skin <input type="checkbox" name="skin"></label>
+    </fieldset>
+
+    <hr>
+
+    <fieldset>
+        <label for="comments">Another comments ?</label>
+        <label for="textarea"><textarea name="comments" id="comments" rows="5" cols="10" placeholder="Write here..."></textarea></label>
+    </fieldset>
+
+
+    <label for="button"><button>Submit</button></label>
+  </form>
+
+</body
